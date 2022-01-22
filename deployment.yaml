@@ -14,12 +14,10 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: emailservice
+        image: gcr.io/useful-cathode-334010/kubernetes@sha256:7dc9a2236cd19bfa908fcf6da4877545a152785073a1c4cfb0a0203c068cbe81
         ports:
         - containerPort: 8080
         envFrom:
-          - configMapRef:
-              name: lightstep-configmap
         env:
         - name: PORT
           value: "8080"
