@@ -64,7 +64,6 @@ spec:
         container('kubectl') {
           sh "gcloud container clusters get-credentials kubernet --zone us-central1-c --project useful-cathode-334010"
           sh "kubectl apply -f deployment.yaml"
-          sh "kubectl apply -f service.yaml"
           
         }
       }
