@@ -25,7 +25,7 @@ spec:
   # serviceAccountName: cd-jenkins
   containers:
   - name: python
-    image: python:slim-buster
+    image: python:slim
     command:
     - cat
     tty: true
