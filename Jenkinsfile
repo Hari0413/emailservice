@@ -43,9 +43,9 @@ spec:
 }
   }
   stages {
-    stage('Test') {
+    stage('build') {
       steps {
-        container('golang') {
+        container('python') {
           sh """
             ln -s `pwd`
           """
