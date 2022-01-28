@@ -5,7 +5,7 @@ pipeline {
     APP_NAME = "kubernetes"
     FE_SVC_NAME = "${APP_NAME}-frontend"
     CLUSTER = "iphone"
-    CLUSTER_ZONE = "asia-south1-c"
+    CLUSTER_ZONE = "us-central1-c"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
   }
