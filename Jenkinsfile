@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    PROJECT = "	my-project-600-339318"
+    PROJECT = "my-project-600-339318"
     APP_NAME = "kubernetes"
     FE_SVC_NAME = "${APP_NAME}-frontend"
     CLUSTER = "iphone"
